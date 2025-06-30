@@ -16,10 +16,10 @@
 
     /* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     :root {
-        --primary: #A88757;
+        --primary: #1D74B0;
         --primaryDark: #A88757;
         --primaryLight: #ffba43;
-        --secondary: black;
+        --secondary: #B53138;
         --secondaryLight: #ffba43;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -27,16 +27,17 @@
          --navBg: #fff;
 
    
- --topperFontSize: clamp(1.5rem, 2.1vw, 3rem);
+ --topperFontSize: clamp(1.5rem, 2.1vw, 1rem);
         /* 31px - 49px */
-        --headerFontSize: clamp(3.15375rem, 3.9vw, 2.0625rem);
+        --headerFontSize: clamp(3.55375rem, 3.9vw, 5.0625rem);
         --bodyFontSize: 1rem;
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
 
-        --headerFont: "Tenor Sans", Arial, sans-serif;
-        --navFont: "Tenor Sans", Arial, sans-serif;
-         --buttonFont: "Tenor Sans", Arial, sans-serif;
+        --headerFont: "Nunito Sans", Arial, sans-serif;
+         --fontFamily: "Nunito Sans", Arial, sans-serif;
+        --navFont: "Nunito Sans", Arial, sans-serif;
+         --buttonFont: "Nunito Sans", Arial, sans-serif;
         --bodyFont: "Roboto", Arial, sans-serif;
     }
 
@@ -64,7 +65,7 @@
     .cs-topper {
         display: block;
         margin-bottom: 0.25rem;
-        font-family: "Tenor Sans", Arial, sans-serif;
+        font-family: "Nunito Sans", Arial, sans-serif;
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 700;
@@ -81,7 +82,7 @@
         font-weight: 700;
         color: var(--headerColor);
         text-align: inherit;
-        font-family: "Tenor Sans", Arial, sans-serif;
+        font-family: "Nunito Sans", Arial, sans-serif;
         
     }
 
@@ -123,8 +124,8 @@
         border:0px solid white;
         padding: 20px 30px;
         text-decoration: none;
-    border-radius: 99px;
-    font-family: "Tenor Sans";
+    border-radius: 0px;
+    font-family: "Nunito Sans";
         font-size: calc(16 / 16 * 1rem);
         font-weight: 700;
         line-height: 22px;
@@ -155,7 +156,7 @@
             height: 100%;
             border:2px solid black;
             opacity: 0;
-            border-radius: 999px;
+            
 
             //Transition properties
             width: 0;
@@ -313,13 +314,13 @@
 
     @font-face {
         font-style: normal;
-        font-family: "Tenor Sans";
-        font-weight: 700;
+        font-family: "Nunito Sans";
+        font-weight: 900;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/tenor-sans-v20-latin-regular.woff2") format("woff2"),
+            url("/assets/fonts/nunito-sans-v18-latin-900.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/tenor-sans-v20-latin-regular.woff2")
+                url("/assets/fonts/nunito-sans-v18-latin-900.woff2")
                 format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
@@ -484,28 +485,7 @@
             align-items: center;
         }
 
-        .cs-logo {
-            width: 40%;
-            max-width: calc(146 / 16 * 1rem);
-            height: 100%;
-            margin: 0 auto 0 0;
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-
-            img {
-                width: 100%;
-                height: 100%;
-                /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-                object-fit: contain;
-                /* places the image to the left edge of the parent */
-                object-position: left;
-            }
-        }
+    
 
         .cs-toggle {
             /* 44px - 48px */
@@ -693,25 +673,7 @@
             display: none;
         }
 
-        .cs-logo {
-            width: 18.4%;
-            max-width: calc(350 / 16 * 1rem);
-            height: calc(65 / 16 * 1rem);
-            /* margin-right auto pushes everything away from it to the right */
-            margin: 0 auto 0 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 100;
 
-            img {
-                width: 100%;
-                height: 100%;
-                /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-                object-fit: contain;
-            }
-        }
 
         .cs-ul {
             width: 100%;
@@ -958,23 +920,7 @@
             position: relative;
         }
 
-        .cs-logo {
-            /* 210px - 240px */
-            width: clamp(13.125rem, 8vw, 15rem);
-            height: auto;
-            display: block;
-            /* 28px - 44px */
-            margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
-        }
-
-        .cs-logo-img {
-            width: 100%;
-            height: auto;
-
-            &.dark {
-                display: none;
-            }
-        }
+    
 
         .cs-text {
             color: var(--bodyTextColorWhite);

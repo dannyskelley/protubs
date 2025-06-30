@@ -1,8 +1,8 @@
 module.exports = {
     name: "Providence Properties, Realty & Management",
     email: "Victoria@providencemichigan.com",
-    phoneForTel: "734.486.5540",
-    phoneFormatted: "734.486.5540",
+    phoneForTel: "(866) 427-6668",
+    phoneFormatted: "(866) 427-6668",
     address: {
         lineOne: "14350 Eureka Rd",
         lineTwo: "",
