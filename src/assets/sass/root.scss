@@ -16,10 +16,10 @@
 
     /* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     :root {
-        --primary: #1D74B0;
+        --primary: #f7b80e;
         --primaryDark: #A88757;
         --primaryLight: #ffba43;
-        --secondary: #B53138;
+        --secondary: #A5303C;
         --secondaryLight: #ffba43;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -27,10 +27,10 @@
          --navBg: #fff;
 
    
- --topperFontSize: clamp(1.5rem, 2.1vw, 1rem);
+ --topperFontSize: clamp(1.5rem, 2.1vw, 1.9rem);
         /* 31px - 49px */
-        --headerFontSize: clamp(3.55375rem, 3.9vw, 5.0625rem);
-        --bodyFontSize: 1rem;
+        --headerFontSize: clamp(2.15375rem, 3.9vw, 5.0625rem);
+        --bodyFontSize: clamp(1.05375rem, 3.9vw, 1.5625rem);
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 2rem;
 
@@ -131,7 +131,7 @@
         line-height: 22px;
         font-weight: bold;
         // Transition Properties
-        color: white;
+        color: black;
         
         text-align: center;
 
