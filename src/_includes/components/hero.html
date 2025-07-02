@@ -58,7 +58,7 @@
   }
   #hero-1836 {
     /* 200px - 300px - leaving extra space for the navigation */
-    padding: clamp(12.5rem, 25.95vw, 15.75em) 2rem;
+    padding: clamp(10.5rem, 25.95vw, 15.75em) 2rem;
     /* prevents the topper line from causing an overflow */
     overflow: hidden;
     position: relative;
@@ -87,7 +87,7 @@
   }
   #hero-1836 .cs-title {
     /* 49px - 84px */
-    font-size: clamp(2.0625rem, 6vw, 5.25rem);
+    font-size: clamp(2.1625rem, 6vw, 3.525rem);
     max-width: 100%;
     
   }
@@ -131,6 +131,7 @@
     height: 100%;
     display: block;
     position: absolute;
+    opacity: .5;
     top: 0;
     left: 0;
     z-index: -2;
@@ -160,10 +161,13 @@
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 1000px) {
   #hero-1836 .cs-background::before {
     content: none;
   }
+    #hero-1836 .cs-container {display: flex;}
+
+      #hero-1836 .cs-content {max-width: 49%;}
 }
 /* Desktop Parallax - 1300px */
 @media only screen and (min-width: 81.25rem) {
@@ -177,6 +181,19 @@
     background-attachment: fixed;
     opacity: .4;
   }
+
+   #hero-1836 .cs-background::before {
+    content: "";
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(0deg,#000 45%,rgba(0,0,0,0) 58.94%,rgba(0,0,0,.9) 96.68%);
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+ }
   #hero-1836 .cs-background img {
     display: none;
   }
