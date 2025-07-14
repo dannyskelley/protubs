@@ -58,7 +58,7 @@
   }
   #hero-1836 {
     /* 200px - 300px - leaving extra space for the navigation */
-    padding: clamp(10.5rem, 25.95vw, 15.75em) 2rem;
+    padding: clamp(10.5rem, 15.95vw, 11.75em) 2rem;
     /* prevents the topper line from causing an overflow */
     overflow: hidden;
     position: relative;
@@ -162,25 +162,6 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 1000px) {
-  #hero-1836 .cs-background::before {
-    content: none;
-  }
-    #hero-1836 .cs-container {display: flex;}
-
-      #hero-1836 .cs-content {max-width: 49%;}
-}
-/* Desktop Parallax - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #hero-1836 .cs-background {
-    
-    background: url("/assets/images/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
-    opacity: .4;
-  }
 
    #hero-1836 .cs-background::before {
     content: "";
@@ -194,6 +175,24 @@
     left: 0;
     z-index: 9999;
  }
+    #hero-1836 .cs-container {display: flex;}
+
+      #hero-1836 .cs-content {max-width: 49%;}
+}
+/* Desktop Parallax - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-1836 .cs-background {
+    
+    background: url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* creates the parallax effect */
+    background-attachment: fixed;
+    opacity: .4;
+  }
+
+
   #hero-1836 .cs-background img {
     display: none;
   }
@@ -224,12 +223,12 @@
     <div class="cs-container">
         <div class="cs-content">
             
-            <h1 class="cs-title">Michigan Trusted Concrete Removal</h1>
+            <h1 class="cs-title">Lapeer, MI Concrete Removal & Site Prep</h1>
             <span class="cs-topper">Fast, Affordable, & Done Right the First Time</span>
             <p class="cs-text">
               At A & A Outdoor LLC, we make concrete removal simple. No stress, no mess. Whether it’s a patio, sidewalk, garage floor, or foundation, our experienced crew clears it fast so you can move forward. We don’t stop there. From excavation and land clearing to grading and gravel installation, we help you prep your space for whatever’s next. 
             </p>
-            <a href="" class="cs-button-solid">Free Estimate</a>
+            <a href="/contact" class="cs-button-solid">Free Estimate</a>
                  
     </div>
  <div class="cs-image-group"><picture class="cs-picture cs-picture1"><source media="(max-width: 600px)" srcset="/assets/images/bg3.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg3.jpg"><img height="366" src="/assets/images/bg3.jpg" alt="wedding photoshoot" decoding="async" width="297"></picture><picture class="cs-picture cs-picture2"><source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg"><img height="376" src="/assets/images/bg2.jpg" alt="photograph of a woman" decoding="async" width="405"></picture><picture class="cs-picture cs-picture3"><source media="(max-width: 600px)" srcset="/assets/images/bg.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg.jpg"><img height="155" src="/assets/images/bg.jpg" alt="children's birthday" decoding="async" width="218"></picture></div>

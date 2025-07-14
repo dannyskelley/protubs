@@ -42,9 +42,9 @@
   }
   #cs-footer-1763 .cs-picture {
     padding: 1.5rem;
-    background-color: var(--secondary);
+    background-color:var(--primary);
     display: block;
-    border-radius: 5px;
+    border-radius: 995px;
   }
   #cs-footer-1763 .cs-icon {
     width: 2rem;
@@ -88,7 +88,6 @@
     height: auto;
     margin: 0 0 1rem 0;
     display: block;
- 
   }
   #cs-footer-1763 .cs-text {
     max-width: 44rem;
@@ -99,8 +98,7 @@
   #cs-footer-1763 .cs-logo-img {
     width: 100%;
     height: auto;
-    border-radius: 999px;
-    max-width: 500px;
+    max-width: 150px;
   }
   #cs-footer-1763 .cs-contact {
     display: grid;
@@ -158,7 +156,7 @@
     /* 60px - 80px */
     margin: clamp(3.75rem, 7vw, 5rem) auto 0;
     padding-top: 1.5rem;
-    border-top: 1px solid var(--border-border-10, #e8e8e8);
+
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
@@ -245,7 +243,7 @@
     grid-column: span 4;
   }
   #cs-footer-1763 .cs-contact {
-    grid-template-columns: repeat(12, 1fr);
+    
     grid-column: span 12;
   }
   #cs-footer-1763 .cs-table {
@@ -288,16 +286,9 @@
 
 <footer id="cs-footer-1763">
 
-    <!-- Logo Group -->
-    <div class="cs-logo-group" style="margin: 0px auto 80px; max-width: 80rem;">
-        <a aria-label="go back to home" class="cs-logo" href="">
-            <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.jpg" alt="logo" width="240" height="32">
-        </a>
-        
-    </div>
 
     <!--Contact Info-->
-    <div class="cs-card-group"  style="border-bottom: 1px solid #eee;">
+    <div class="cs-card-group" >
 
 
 
@@ -307,9 +298,10 @@
                 <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
             </picture>
             <div class="cs-flex">
-                <div class="cs-h3">Serving Michigan</div>
+                <h3 class="cs-h3">Location</h3>
                 <span class="cs-card-info">
-                 Serving Lapeer & Surrounding Areas
+                    
+                   14350 Eureka, Southgate, MI
                 </span>
             </div>
         </div>
@@ -318,9 +310,10 @@
                 <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
             </picture>
             <div class="cs-flex">
-                <div class="cs-h3">Working Hours</div>
-                <span class="cs-card-info">Monday - Saturday: 7am - 7pm </span>
-                <span class="cs-card-info">Sunday: Closed</span>
+                <h3 class="cs-h3">Available 24/7</h3>
+                <span class="cs-card-info">Client satisfaction over everything.
+                  </span>
+               
             </div>
         </div>
         <div class="cs-card">
@@ -328,9 +321,9 @@
                 <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
             </picture>
             <div class="cs-flex">
-                <div class="cs-h3">Contact Us</div>
-                <a href="tel:{{client.phoneForTel}}" class="cs-card-info">{{client.phoneForTel}}</a>
-                <a href="mailto:{{client.email}}" class="cs-card-info">{{client.email}}</a>
+                <h3 class="cs-h3">Contact Us</h3>
+                <a href="tel:{{client.phoneForTel}}" class="cs-card-info">{{client.phoneFormatted}} </a>
+             
             </div>
         </div>
         <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
@@ -339,127 +332,16 @@
     <div class="cs-container" style="padding-top: 30px;">
         <!-- Logo Group -->
 
-        <!-- Links -->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            About
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
-                            Services
-                            <img class="cs-drop-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
-                                alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-      <ul class="cs-drop-ul">
-    <li class="cs-drop-li">
-        <a href="/services#concrete-removal" class="cs-li-link cs-drop-link">Concrete Removal</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#septic-field-installation" class="cs-li-link cs-drop-link">Septic Field Installation</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#land-clearing" class="cs-li-link cs-drop-link">Land Clearing</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#demolition" class="cs-li-link cs-drop-link">Demolition</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#water-sewer-taps" class="cs-li-link cs-drop-link">Water & Sewer Taps</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#dirt-work" class="cs-li-link cs-drop-link">Dirt Work</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#site-work" class="cs-li-link cs-drop-link">Site Work</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#finish-grade" class="cs-li-link cs-drop-link">Finish Grade</a>
-    </li>
-    <li class="cs-drop-li">
-        <a href="/services#trucking" class="cs-li-link cs-drop-link">Trucking</a>
-    </li>
-</ul>
-
-                    </li>
-                       <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                           Photos
-                        </a>
-                    </li>
-
-                          <li class="cs-li">
-                        <a href="/contact" class="cs-li-link">
-                           Contact Us
-                        </a>
-                    </li>
-                   
-                </ul>
-            </div>
-
-        <div class="cs-ul-wrapper">
-            <span class="cs-header">Service Area</span>
-        <ul class="cs-ul">
-  
-<ul>
-    <li class="cs-li">Auburn Hills</li>
-    <li class="cs-li">Berkley</li>
-    <li class="cs-li">Beverly Hills</li>
-    <li class="cs-li">Bingham Farms</li>
-    <li class="cs-li">Birmingham</li>
-    <li class="cs-li">Bloomfield Hills</li>
-    <li class="cs-li">Clarkston</li>
-    <li class="cs-li">Clawson</li>
-    <li class="cs-li">Farmington</li>
-    <li class="cs-li">Farmington Hills</li>
-    <li class="cs-li">Ferndale</li>
-    <li class="cs-li">Hazel Park</li>
-    <li class="cs-li">Huntington Woods</li>
-    <li class="cs-li">Keego Harbor</li>
-    <li class="cs-li">Lake Angelus</li>
-    <li class="cs-li">Lathrup Village</li>
-    <li class="cs-li">Madison Heights</li>
-    <li class="cs-li">Novi</li>
-    <li class="cs-li">Oak Park</li>
-    <li class="cs-li">Orchard Lake Village</li>
-    <li class="cs-li">Pleasant Ridge</li>
-    <li class="cs-li">Pontiac</li>
-    <li class="cs-li">Rochester</li>
-    <li class="cs-li">Rochester Hills</li>
-    <li class="cs-li">Royal Oak</li>
-    <li class="cs-li">South Lyon</li>
-    <li class="cs-li">Southfield</li>
-    <li class="cs-li">Sylvan Lake</li>
-    <li class="cs-li">Troy</li>
-    <li class="cs-li">Walled Lake</li>
-    <li class="cs-li">Wixom</li>
-    <li class="cs-li">Wolverine Lake</li>
-</ul>
-
-</ul>
-
-        </DIV>
+   
         <div class="cs-contact">
             <div class="cs-contact-info">
                 <span class="cs-header">Follow Us</span>
                 {% include 'components/social-links.html' %}
             </div>
-            <div class="cs-contact-info" style="min-width: 200px;">
-                <span class="cs-topper" style="color: var(--secondary);">Call Or Text Us Any Time</span>
-                <a href="tel:{{client.phoneForTel}}" class="cs-contact-link">{{client.phoneForTel}}</a>
-            </div>
+         <DIV> <a class="cs-button-solid" href="#top" style="max-width: 200px;">Scroll To Top</a></DIV>
        
         </div>
+      
     </div>
     <div class="cs-bottom">
         <span class="cs-credit">
