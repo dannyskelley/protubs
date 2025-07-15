@@ -1,0 +1,348 @@
+<style>
+    /*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+    /* Mobile - 360px */
+    @media only screen and (min-width: 0rem) {
+        #content-page-852 {
+            padding: var(--sectionPadding);
+            background-color: #fff;
+            /* clips the wave background from causing overflow issues when it goes off screen */
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        #content-page-852 .cs-container {
+            width: 100%;
+            max-width: 80rem;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        #content-page-852 .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: 46.125rem;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        #content-page-852 .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+            position: relative;
+            padding-top: 50px;
+            ;
+        }
+
+        #content-page-852 h2,
+        #content-page-852 h3,
+        #content-page-852 h4,
+        #content-page-852 h5,
+        #content-page-852 h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 1rem 0;
+            color: var(--headerColor);
+        }
+
+        #content-page-852 h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        #content-page-852 h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        #content-page-852 h4,
+        #content-page-852 h5,
+        #content-page-852 h6 {
+            font-size: 1.25rem;
+        }
+
+        #content-page-852 .cs-button-solid {
+            margin-bottom: 2rem;
+        }
+
+        #content-page-852 .cs-no-margin {
+            margin: 0;
+        }
+
+        #content-page-852 .cs-color {
+            color: var(--primary);
+        }
+
+        #content-page-852 p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 1rem 0;
+            color: var(--bodyTextColor);
+        }
+
+        #content-page-852 p:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        #content-page-852 p a {
+            font-size: inherit;
+            line-height: inherit;
+            text-decoration: underline;
+            color: var(--primary);
+        }
+
+        #content-page-852 ol,
+        #content-page-852 ul {
+            padding-left: 1.5rem;
+            margin: 0 0 2rem 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #content-page-852 ul li {
+            list-style: none;
+            color: inherit;
+            position: relative;
+        }
+
+        #content-page-852 ul li:before {
+            /* custom list bullet */
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: currentColor;
+            opacity: 1;
+            border-radius: 50%;
+            position: absolute;
+            display: block;
+            top: 0.625rem;
+            left: -0.75rem;
+        }
+
+        #content-page-852 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #content-page-852 .cs-image-group {
+            width: 50%;
+            max-width: 27.0625rem;
+            display: none;
+            flex-direction: column;
+            gap: 1.25rem;
+            position: relative;
+        }
+
+        #content-page-852 .cs-image-group:after {
+            /* colored box */
+            content: "";
+            width: 100%;
+            /* 177px - 258px */
+            height: clamp(11.0625rem, 19vw, 16.125rem);
+            background: var(--primary);
+            border-radius: 6.25rem 0 6.25rem;
+            opacity: 0.15;
+            display: block;
+        }
+
+        #content-page-852 .cs-picture {
+            width: 100%;
+            /* 300px - 520px */
+            height: clamp(18.75rem, 40vw, 32.5rem);
+            box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+            /* 125px - 200px */
+            border-radius: 0 clamp(7.8125rem, 15vw, 12.5rem) 0 clamp(7.8125rem, 15vw, 12.5rem);
+            /* prevents border from affecting height and width */
+            box-sizing: border-box;
+            /* clips img tag corners */
+            overflow: hidden;
+            display: block;
+            position: relative;
+        }
+
+        #content-page-852 .cs-picture img {
+            width: 100%;
+            height: 100%;
+            /* makes it act like a background image */
+            object-fit: cover;
+        }
+    }
+
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+        #content-page-852 .cs-container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        #content-page-852 .cs-content {
+            flex: none;
+            max-width: 800px;
+            margin: auto;
+            /* sens it to the right in the 2nd position */
+            order: 2;
+        }
+
+        #content-page-852 .cs-image-group {
+            display: flex;
+        }
+    }
+</style>
+<section id="content-page-852">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title"> Site Preparation Services</h2>
+            <p>
+                A & A Outdoor LLC provides full service site prep, excavation, and demolition for homeowners, builders,
+                and developers across Michigan. Whether you're clearing land, removing concrete, or digging for a new
+                septic system, we handle every job with speed, precision, and care.
+                <BR><BR>
+            </p>
+
+            <h3 class="cs-title" id="concrete-removal"> Concrete Removal</h3>
+            <p>
+                We remove driveways, patios, garage floors, and foundations with minimal disruption to your property.
+                Our team delivers clean, efficient concrete removal to get your site ready for what’s next.
+                <BR><BR>
+                <b>Why Choose Our Concrete Removal?</b><BR><BR>
+                • Fast, professional removal with full cleanup<BR><BR>
+                • Driveways, slabs, garage floors, sidewalks<BR><BR>
+                • Ideal for site prep and demolition projects<BR><BR>
+                • Local service trusted across Michigan<BR><BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="septic-field-installation"> Septic Field Installation</h3>
+            <p>
+                We manage the full septic system installation process, including excavation, trenching, and drain field
+                setup. Our systems are installed to last and meet all local code requirements.
+                <BR><BR>
+                • Complete septic system installation<BR><BR>
+                • Drain field trenching and backfilling<BR><BR>
+                • Final grading for proper water flow<BR><BR>
+                • Reliable, code-compliant work<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="land-clearing"> Land Clearing</h3>
+            <p>
+                We clear trees, brush, and debris to give your project a clean slate. From new builds to lot prep, our
+                land clearing services are fast, thorough, and cost-effective.
+                <BR><BR>
+                <b>Our Land Clearing Includes:</b><BR><BR>
+                • Tree and stump removal<BR><BR>
+                • Brush and overgrowth clearing<BR><BR>
+                • Lot and acreage cleanup<BR><BR>
+                • Ideal for residential and commercial development<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="demolition"> Demolition</h3>
+            <p>
+                We demolish garages, sheds, old homes, and outbuildings with safety and speed. Our crew handles debris
+                removal and leaves your property ready for the next step.
+                <BR><BR>
+                <b>Common Demolition Projects:</b><BR><BR>
+                • Garage and outbuilding removal<BR><BR>
+                • Old home and structure teardown<BR><BR>
+                • Interior strip outs for remodels<BR><BR>
+                • Safe disposal and site cleanup<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="dirt-work"> Excavating and Grading</h3>
+            <p>
+                We provide expert excavating for foundations, utilities, driveways, and more. Our grading work ensures
+                proper drainage and a level surface for future construction.
+                <BR><BR>
+                <b>Our Excavating Services Include:</b><BR><BR>
+                • Foundation and trench digging<BR><BR>
+                • Finish grading and sloping<BR><BR>
+                • Utility trenching and site prep<BR><BR>
+                • Residential and commercial work<BR><BR>
+            </p>
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="trucking"> Gravel and Trucking</h3>
+            <p>
+                We deliver and spread gravel for driveways, foundations, and job sites. We also haul fill dirt, debris,
+                and construction materials to or from your location.
+                <BR><BR>
+                <b>Benefits of Our Trucking Services:</b><BR><BR>
+                • Gravel delivery and spreading<BR><BR>
+                • Fill dirt and material hauling<BR><BR>
+                • Site cleanup and disposal<BR><BR>
+                • Reliable, on-time service<BR><BR>
+            </p>
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="site-work"> Forestry Mulching</h3>
+            <p>
+                Forestry mulching clears overgrown lots and trails without burning or hauling debris. It’s fast, clean,
+                and environmentally responsible.
+                <BR><BR>
+                <b>Why Property Owners Choose Mulching:</b><BR><BR>
+                • Clears brush and saplings quickly<BR><BR>
+                • No debris piles or burn permits<BR><BR>
+                • Ideal for acreage, trails, fence lines<BR><BR>
+                • Preps land for resale or development<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="water-sewer-taps"> Water and Sewer Taps</h3>
+            <p>
+                We install new water and sewer connections with code compliant trenching and backfill. Every line is
+                safely laid with proper slope and permits handled.
+                <BR><BR>
+                • New water and sewer tap installation<BR><BR>
+                • Trenching and backfill<BR><BR>
+                • Code compliant execution<BR><BR>
+                • Permits and inspections included<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+            <h3 class="cs-title" id="finish-grade"> Final Grading</h3>
+            <p>
+                Finish grading is essential for drainage, safety, and the final look of your project. We shape and
+                smooth the land so it’s ready for whatever comes next.
+                <BR><BR>
+                • Yard and lot grading<BR><BR>
+                • Foundation slope correction<BR><BR>
+                • Smooth, compact finish<BR><BR>
+                • Drainage friendly contouring<BR><BR>
+            </p>
+
+            <div style="margin: 0px 0px 60px;"> {% include 'components/cta_button.html' %}</div>
+
+        </div>
+    </div>
+</section>
