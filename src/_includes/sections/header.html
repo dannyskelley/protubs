@@ -756,7 +756,7 @@
 
         #cs-navigation .cs-li-link.cs-active {
             font-weight: 700;
-            color: var(--headerColor);
+            color: var(--secondary);
         }
 
         #cs-navigation .cs-button-solid {
@@ -838,18 +838,18 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
+                        <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}">
                             Home
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/about/" class="cs-li-link {% if page.url == "/bout/" %} cs-active {% endif %}">
                             About
                         </a>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
+                        <span href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}">
                             Services
                             <img class="cs-drop-icon"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
@@ -888,7 +888,7 @@
                     </li>
                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/photos/" class="cs-li-link {% if page.url == "/photos/" %} cs-active {% endif %}">
                            Photos
                         </a>
                     </li>
