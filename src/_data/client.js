@@ -1,6 +1,6 @@
 module.exports = {
-    name: "A & A Outdoor LLC",
-    email: "Aandaoutdoorllc@gmail.com",
+    name: "Pro Tubs LLC",
+    email: "bathtubs76@gmail.com",
     phoneForTel: "248.519.7913",
     phoneFormatted: "248.519.7913",
     address: {
