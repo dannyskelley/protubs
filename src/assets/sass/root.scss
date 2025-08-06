@@ -19,12 +19,13 @@
         --primary: #f7b80e;
         --primaryDark: #A88757;
         --primaryLight: #ffba43;
-        --secondary: #A5303C;
+        --secondary: #0A4174;
         --secondaryLight: #ffba43;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
-         --navBg: #fff;
+         --navBg: #004D94;
+          --navLink: #FFF;
 
    
  --topperFontSize: clamp(1.3rem, 2.1vw, 1.6rem);
@@ -124,7 +125,7 @@
         border:0px solid white;
         padding: 20px 30px;
         text-decoration: none;
-    border-radius: 0px;
+    border-radius: 12px;
     font-family: "Nunito Sans";
         font-size: calc(16 / 16 * 1rem);
         font-weight: 700;

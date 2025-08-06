@@ -1,8 +1,8 @@
 module.exports = {
     name: "A & A Outdoor LLC",
     email: "Aandaoutdoorllc@gmail.com",
-    phoneForTel: "810-531-6867",
-    phoneFormatted: "810-531-6867",
+    phoneForTel: "248.519.7913",
+    phoneFormatted: "248.519.7913",
     address: {
         lineOne: "14350 Eureka Rd",
         lineTwo: "",

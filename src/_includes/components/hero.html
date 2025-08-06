@@ -1,247 +1,268 @@
 <!-- ============================================ -->
-<!--                    Hero                      -->
+<!--                  Side By Side                -->
 <!-- ============================================ -->
+
 
 <style>
   /*-- -------------------------- -->
-<---           Hero             -->
+<---        Side By Side        -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-
- #hero-1836 .cs-image-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
-    font-size: min(2.32vw, .74em);
-    width: 39.375em;
-    height: 40.9375em;
-    display: block;
-    position: relative;
-    z-index: 1;
-
-    
-  }
-
- #hero-1836 .cs-picture {
-    position: absolute;
-  }
- #hero-1836 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #hero-1836 .cs-picture1 {
-    width: 19.0625em;
-    height: auto;
-    border: 4px solid #FFFFFF;
-    top: 0;
-    bottom: 17.5625em;
-    left: 30px;
-  }
-   #hero-1836 .cs-picture2 {
-    width: 25.8125em;
-    height: auto;
-    border: 4px solid #FFFFFF;
-    top: 16.9375em;
-    right: 30px;
-    bottom: 30px;
-  }
-   #hero-1836 .cs-picture3 {
-    width: 13.625em;
-    height: 9.6875em;
-    top: 5.25em;
-    right: 4.6875em;
-    border: 4px solid #FFFFFF;
-  }
-  #hero-1836 {
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding: clamp(10.5rem, 15.95vw, 11.75em) 2rem;
-    /* prevents the topper line from causing an overflow */
+  #sbs-2295 {
+    padding: clamp(6.75rem, 7.82vw, 8.25rem) 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #99ccff 100%);
     overflow: hidden;
     position: relative;
     z-index: 1;
-        background-color: #2c1b1b;
   }
-  #hero-1836 .cs-container {
+  #sbs-2295 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-  #hero-1836 .cs-content {
-    text-align: left;
-    width: 100%;
-    max-width: 46.875rem;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 4vw, 4rem);
+  }
+  #sbs-2295 .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(1.98vw, .826rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 46.125em;
+    height: 32.125em;
+    order: -1;
     position: relative;
     z-index: 1;
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
-  #hero-1836 .cs-title {
-    /* 49px - 84px */
-    font-size: clamp(2.1625rem, 6vw, 3.525rem);
-    max-width: 100%;
-    
+  #sbs-2295 .cs-picture {
+    width: 100%;
+    height: 100%;
+    border: 1em solid var(--bodyTextColorWhite);
+    display: block;
   }
-  #hero-1836 .cs-title,
-  #hero-1836 .cs-text {
+  #sbs-2295 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  #sbs-2295 .cs-picture-wrapper1 {
+    width: 25.75em;
+    height: 28.5625em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #sbs-2295 .cs-picture-wrapper2 {
+    width: 25.8125em;
+    height: 29.625em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #sbs-2295 .cs-tag {
+    /* 14px - 24px */
+    font-size: clamp(0.875rem, 1.4vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    color: var(--headerColor);
+  }
+  #sbs-2295 .cs-arrow {
+    width: 9.25em;
+    height: 3.375em;
+    position: absolute;
+    top: 15.125em;
+    left: 15.9375em;
+    transform: rotate(30deg);
+  }
+  #sbs-2295 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
     text-align: left;
-    color: var(--bodyTextColorWhite);
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
   }
-  #hero-1836 .cs-text {
-    margin-bottom: 2rem;
+  #sbs-2295 .cs-title {
+    max-width: 30ch;
+  }
+  #sbs-2295 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-2295 .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
   }
  
-  #hero-1836 .cs-content-graphic {
-    height: 305%;
-    max-height: 81.25rem;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: -350px;
-    z-index: -1;
-    transform: translateY(-50%);
-    z-index: -3;
-    opacity: .5;
+  #sbs-2295 .cs-h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--headerColor);
   }
-  #hero-1836 .cs-graphic {
-    width: 100%;
-    min-width: 120rem;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
+  #sbs-2295 .cs-ul {
+    margin: 0.75rem 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
-  #hero-1836 .cs-graphic-dark {
-    display: none;
+  #sbs-2295 .cs-li {
+    font-size: 1rem;
+    line-height: 1.5em;
+    list-style: none;
+    /* 20px - 24px */
+    padding-left: clamp(1.25rem, 3vw, 1.5rem);
+    color: var(--bodyTextColor);
+    position: relative;
   }
-  #hero-1836 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    opacity: .5;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
+  #sbs-2295 .cs-li strong {
+    color: #1a1a1a;
   }
-  #hero-1836 .cs-background:before {
+  #sbs-2295 .cs-li::before {
     content: "";
-    width: 100%;
-    height: 100%;
-    background: #000;
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
-    opacity: 0.4;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--secondary);
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-  }
-  #hero-1836 .cs-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    transform: rotate(45deg);
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 1000px) {
-
-   #hero-1836 .cs-background::before {
-    content: "";
-    width: 100%;
-    height: 150vh;
-    background: linear-gradient(0deg,#000 45%,rgba(0,0,0,0) 58.94%,rgba(0,0,0,.9) 96.68%);
-    opacity: .5;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
- }
-    #hero-1836 .cs-container {display: flex;}
-
-      #hero-1836 .cs-content {max-width: 49%;}
-}
-/* Desktop Parallax - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #hero-1836 .cs-background {
-    
-    background: url("/assets/images/bg.jpg");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
-    opacity: .4;
+@media only screen and (min-width: 48rem) {
+  #sbs-2295 .cs-container {
+    max-width: 80rem;
   }
-
-
-  #hero-1836 .cs-background img {
-    display: none;
+  #sbs-2295 .cs-image-group {
+    order: initial;
   }
 }
-/* Large Desktop - 1920px */
-@media only screen and (min-width: 120rem) {
-  #hero-1836 {
-    /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get closer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
-    padding-bottom: 14vw;
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-2295 .cs-container {
+    flex-direction: row;
+    align-items: stretch;
   }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-1836 .cs-background:before {
-    opacity: 0.85;
+  #sbs-2295 .cs-image-group {
+    font-size: min(1.03vw, 1rem);
+    height: auto;
   }
-  body.dark-mode #hero-1836 .cs-graphic {
-    display: none;
+  #sbs-2295 .cs-picture-wrapper1 {
+    height: auto;
+    bottom: 7.5625em;
   }
-  body.dark-mode #hero-1836 .cs-graphic-dark {
-    display: block;
+  #sbs-2295 .cs-picture-wrapper2 {
+    height: auto;
+    top: 6.5em;
   }
 }
                                 
 </style>
 
-<section id="hero-1836">
+<section id="sbs-2295">
     <div class="cs-container">
-        <div class="cs-content">
-            
-            <h1 class="cs-title">Lapeer, MI Concrete Removal & Site Prep</h1>
-            <span class="cs-topper">Fast, Affordable, & Done Right the First Time</span>
-            <p class="cs-text">
-              At A & A Outdoor LLC, we make concrete removal simple. No stress, no mess. Whether it’s a patio, sidewalk, garage floor, or foundation, our experienced crew clears it fast so you can move forward. We don’t stop there. From excavation and land clearing to grading and gravel installation, we help you prep your space for whatever’s next. 
-            </p>
-            <a href="/contact" class="cs-button-solid">Get Your Free Estimate</a>
-                 
-    </div>
- <div class="cs-image-group"><picture class="cs-picture cs-picture1"><source media="(max-width: 600px)" srcset="/assets/images/bg3.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg3.jpg"><img height="366" src="/assets/images/bg3.jpg" alt="wedding photoshoot" decoding="async" width="297"></picture><picture class="cs-picture cs-picture2"><source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg"><img height="376" src="/assets/images/bg2.jpg" alt="photograph of a woman" decoding="async" width="405"></picture><picture class="cs-picture cs-picture3"><source media="(max-width: 600px)" srcset="/assets/images/bg.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bg.jpg"><img height="155" src="/assets/images/bg.jpg" alt="children's birthday" decoding="async" width="218"></picture></div>
-          </div>
-    <!-- Background Image -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-        <img loading="lazy" decoding="async" src="/assets/images/bg.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
-    </picture>
+     
+       <div class="cs-content">
 
-    <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
-    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
-    <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+    <h2 class="cs-title" style="color: var(--navBg);">Bathtub Refinishing in Warren, MI</h2>
+        <span class="cs-topper" style="color: #000;">$479 Flat Rate<BR> Call Now {{client.phoneFormatted}}</span>
+              <a href="#contact" class="cs-button-solid" style="margin:20px 0px 30px;">Schedule Service</a>
+    <p class="cs-text">
+        Don’t replace your tub, restore it. Save thousands and get a like new finish with our expert reglazing service. 
+        Every tub refinishing includes free caulking, stripping, cleaning supplies, any color you want, and a 5 year warranty.
+    </p>
+
+    <ul class="cs-ul">
+        <li class="cs-li">
+            <strong>All Inclusive Price</strong> Just $479 per tub. No hidden fees.
+        </li>
+        <li class="cs-li">
+            <strong>Fast Turnaround</strong> Most tubs are ready in 24 to 48 hours.
+        </li>
+        <li class="cs-li">
+            <strong>Expert Craftsmanship</strong> High quality finish that lasts for years.
+        </li>
+        <li class="cs-li">
+            <strong>Trusted & Local</strong> Serving Warren & Metro Detroit homeowners for over 20 years.
+        </li>
+    </ul>
+
+</div>
+
+   <div class="cs-image-group">
+            <!--Main Image-->
+            <div class="cs-picture-wrapper1">
+                <picture class="cs-picture cs-picture1">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="construction" width="272" height="337">
+                </picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <!--Small Image-->
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="construction" width="243" height="367">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/before-after-arrow.svg" alt="arrow" width="148" height="54">
+        </div>
+
+    </div>
+
+    <STYLE>
+  .cs-wave {
+    width: 100%;
+    left: 0;
+    bottom:-20px;
+    transform: none;
+  }
+
+ .cs-wave {
+    /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+  
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  </STYLE>
+  <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
 </section>
                                 
+                                
+
+    {% include 'components/home_stats.html' %}
