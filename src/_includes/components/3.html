@@ -1,366 +1,222 @@
 <!-- ============================================ -->
-<!--              Side By Side Reverse            -->
+<!--                  Why Choose                  -->
 <!-- ============================================ -->
 
 
 <style>
   /*-- -------------------------- -->
-<---    Side By Side Reverse    -->
+<---        Why Choose          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-2326 {
-    padding: var(--sectionPadding);
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    background-color: #fafafa;
-  }
-  #sbsr-2326 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 44rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 4vw, 4rem);
-  }
-  #sbsr-2326 .cs-content {
-    /* set text align to center if content needs to be centrally aligned */
-    text-align: left;
-    width: 100%;
-    max-width: 36.625rem;
-    display: flex;
-    flex-direction: column;
-    /* aligns content to the left, set to center to centrally align */
-    align-items: flex-start;
-  }
-  #sbsr-2326 .cs-title {
-    max-width: 30ch;
-  }
-  #sbsr-2326 .cs-text {
-    margin-bottom: 1rem;
-  }
-  #sbsr-2326 .cs-text:last-of-type {
-    margin-bottom: 1.5rem;
-  }
-  #sbsr-2326 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: var(--bodyTextColorWhite);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #sbsr-2326 .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #sbsr-2326 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #sbsr-2326 .cs-h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--headerColor);
-  }
-  #sbsr-2326 .cs-ul {
-    margin: 0.75rem 0 2rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  #sbsr-2326 .cs-li {
-    font-size: 1rem;
-    line-height: 1.5em;
-    list-style: none;
-    /* 20px - 24px */
-    padding-left: clamp(1.25rem, 3vw, 1.5rem);
-    color: var(--bodyTextColor);
-    position: relative;
-  }
-  #sbsr-2326 .cs-li strong {
-    color: var(--headerColor);
-  }
-  #sbsr-2326 .cs-li::before {
-    content: "";
-    width: 0.5rem;
-    height: 0.5rem;
-    margin-top: 0.5rem;
-    background-color: var(--secondary);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(45deg);
-  }
-  #sbsr-2326 .cs-button-box {
-    font-size: inherit;
-    width: 100%;
-    max-width: 39.375rem;
-    /* 48px - 64px */
-    margin: clamp(3rem, 6.5vw, 4rem) 0 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  #sbsr-2326 .cs-link {
-    /* using ems for font size and wrapper values so we can scale them with a font size at desktop */
-    text-decoration: none;
-    padding-right: 1.875rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
-  }
-  #sbsr-2326 .cs-link:hover:before {
-    width: 100%;
-    height: 4.5em;
-  }
-  #sbsr-2326 .cs-link:hover .cs-wrapper {
-    transform: scale(1.2);
-  }
-  #sbsr-2326 .cs-link:hover .cs-icon {
-    transform: translateX(0.4375rem);
-  }
-  #sbsr-2326 .cs-link:before {
-    /* light green circle that animates on hover */
-    content: "";
-    width: 3.75em;
-    height: 3.75em;
-    background: var(--primary);
-    opacity: 0.0;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    transform: translateY(-50%);
-    transition: width 0.3s, height 0.3s, border-radius 0.3s;
-  }
-  #sbsr-2326 .cs-wrapper {
-    width: 3.75em;
-    height: 3.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
-    transition: transform 0.3s;
-  }
-  #sbsr-2326 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
-  }
-  #sbsr-2326 .cs-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-  }
-  #sbsr-2326 .cs-header {
-    font-size: 1em;
-    line-height: 1.2em;
-    font-weight: 400;
-    margin: 0;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #sbsr-2326 .cs-link-content {
-    font-size: 1.5625em;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    color: var(--headerColor);
-    display: block;
-  }
-  #sbsr-2326 .cs-image-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
-    font-size: min(2.32vw, .9rem);
-    width: 39.375em;
-    height: 36.125em;
-    display: block;
-    position: relative;
-    z-index: 1;
-    order: -1;
-  }
-  #sbsr-2326 .cs-picture {
-    display: block;
-    position: absolute;
-  }
-  #sbsr-2326 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #sbsr-2326 .cs-picture1 {
-    width: 25.75em;
-    height: 25.75em;
-    border-right: 0.875em solid #fff;
-    border-bottom: 0.875em solid #fff;
-    top: 0;
-    bottom: 17.5625em;
-    left: 0;
-  }
-  #sbsr-2326 .cs-picture2 {
-    width: 25.8125em;
-    height: 22em;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  #sbsr-2326 .cs-picture3 {
-    width: 14.5625em;
-    height: auto;
-    bottom: 5.8125em;
-    left: 6.25em;
-  }
-  #sbsr-2326 .cs-picture3 img {
-    position: relative;
-    border-radius: 999px;
-  }
+    #why-choose-37 {
+        position: relative;
+        /* Prevents overflow from the image going off screen */
+        overflow: hidden;
+    }
+    #why-choose-37 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    #why-choose-37 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 39.375rem;
+        margin-right: auto;
+        /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+        padding: var(--sectionPadding);
+        padding-top: 0;
+        /* prevents padding from affecting width and height */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+    #why-choose-37 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #why-choose-37 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #why-choose-37 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #why-choose-37 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #why-choose-37 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #why-choose-37 .cs-ul {
+        padding: 0;
+        margin: 0;
+    }
+    #why-choose-37 .cs-li {
+        list-style: none;
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #1a1a1a;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #why-choose-37 .cs-icon {
+        margin-right: 1rem;
+    }
+ 
+    #why-choose-37 .cs-picture {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 18.75rem;
+    }
+    #why-choose-37 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes it act like a background image */
+        object-fit: cover;
+    }
+}
+/* In Between - 650px */
+@media only screen and (min-width: 40.625rem) {
+    #why-choose-37 .cs-ul {
+        columns: 2;
+        max-width: 34.375rem;
+    }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbsr-2326 .cs-container {
-    max-width: 80rem;
-  }
+    #why-choose-37 {
+        /* moved padding pack to the section container */
+        padding: var(--sectionPadding);
+    }
+    #why-choose-37 .cs-content {
+        width: 60%;
+        padding: 0;
+    }
+    #why-choose-37 .cs-picture {
+        height: 100%;
+        width: 50%;
+        left: 50%;
+        right: auto;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+    #why-choose-37 .cs-picture:before {
+        /* Triangle over image */
+        content: "";
+        width: 21.875rem;
+        background: #fff;
+        /* makes the triangle shape over the image */
+        clip-path: polygon(0 0, 73% 0, 42% 100%, 0 100%);
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: -0.125rem;
+        bottom: -0.125rem;
+        left: -0.125rem;
+        right: auto;
+        z-index: 10;
+    }
+    #why-choose-37 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbsr-2326 .cs-container {
-    flex-direction: row;
-    align-items: stretch;
-  }
-  #sbsr-2326 .cs-button-box {
-    /* add font size scaling to make the elements smaller so they fit horizontally */
-    font-size: min(1.4vw, 1rem);
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  #sbsr-2326 .cs-image-group {
-    font-size: min(1.1vw, 1rem);
-    height: auto;
-    min-height: 36.125em;
-    margin-bottom: 4.375rem;
-    order: initial;
-    flex: none;
-  }
-  #sbsr-2326 .cs-picture1 {
-    height: auto;
-    top: 0;
-    bottom: 10.375em;
-  }
-  #sbsr-2326 .cs-picture2 {
-    height: auto;
-    top: 14.125em;
-  }
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+    #why-choose-37 .cs-picture:before {
+        width: 18.75rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 14% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 14% 100%, 0 100%);
+    }
 }
+
                                 
 </style>
 
-<section id="sbsr-2326">
+<section id="why-choose-37">
     <div class="cs-container">
-      
-        <div class="cs-content">
-    <span class="cs-topper" style="color:var(--secondary);">A & A Outdoor LLC</span>
-    <h2 class="cs-title">Work With a Team That Takes Pride in Every Job</h2>
+        <!-- Right Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="lightbulbs on a wire" width="858" height="781">
+        </picture>
+     <div class="cs-content">
+  
+    <h2 class="cs-title">We Refinish Tubs for Just $479 - One Flat price</h2>
     <p class="cs-text">
-    We’re more than machines and manpower. We show up on time, treat your property with care, and get the job done right. Without cutting corners.    </p>
-    <div class="cs-topper" style="color:var(--secondary)">
-        Why Homeowners and Contractors Trust A & A Outdoor:
+        Pro Tubs LLC offers professional bathtub refinishing that restores your tub’s shine without replacing it. 
+        Our experienced team handles everything. From stripping the old finish to applying a durable new coating 
+        that looks brand new and lasts for years.
+    </p>
+    <ul class="cs-ul">
+        <li class="cs-li">
+            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+            Free Caulking
+        </li>
+        <li class="cs-li">
+            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+            Free Stripping
+        </li>
+        <li class="cs-li">
+            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+            Free Cleaning Supplies
+        </li>
+        <li class="cs-li">
+            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+            5 Year Warranty
+        </li>
+        <li class="cs-li">
+            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+            Any Color. No Extra Charge
+        </li>
+    </ul>
+    <DIV style="margin-top: 50px;"> {% include 'components/cta_button.html' %} </DIV>
+</div>
 
     </div>
-
-    <ul class="cs-ul">
-  <li class="cs-li">Fair, Honest Pricing</li>
-  <li class="cs-li">15+ Years of Experience</li>
-  <li class="cs-li">Licensed & Bonded</li>
-  <li class="cs-li">100% Satisfaction Guarantee</li>
-</ul>
-
-    <div class="cs-button-box">
-        <a class="cs-link" href="tel:8105316867">
-            <picture class="cs-wrapper">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-red2.svg" alt="icon" width="24" height="24">
-            </picture>
-            <div class="cs-info">
-                <span class="cs-header">Call Us</span>
-                <span class="cs-link-content">(810) 531-6867</span>
-            </div>
-        </a>
-        <a class="cs-link" href="mailto:aandaoutdoor@outlook.com">
-            <picture class="cs-wrapper">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/email-red2.svg" alt="icon" width="24" height="24">
-            </picture>
-            <div class="cs-info">
-                <span class="cs-header">Email Us</span>
-                <span class="cs-link-content">Click To Email</span>
-            </div>
-        </a>
-    </div>        
-</div>
-
-      
-   
-  <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture cs-picture1">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="wedding photoshoot" width="297" height="366">
-            </picture>
-            <!--Bottom right image-->
-            <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/bg3.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/bg3.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/bg3.jpg" alt="photograph of a woman" width="405" height="376">
-            </picture>
-            <!--Middle image-->
-            <picture class="cs-picture cs-picture3">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/icon.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/icon.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/icon.jpg" alt="children's birthday" width="218" height="155">
-            </picture>
-        </div>
-</div>
-
 </section>
                                 

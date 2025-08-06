@@ -1,185 +1,198 @@
 <!-- ============================================ -->
-<!--                  Timeline                    -->
+<!--                  Services                    -->
 <!-- ============================================ -->
 
 <style>
-  /*-- -------------------------- -->
-<---          Timeline          -->
+    /*-- -------------------------- -->
+<---          Services          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #timeline-970 {
-        padding: var(--sectionPadding);
-     
-        /* clips the white line through the bullets */
-        overflow: hidden;
-    }
-    #timeline-970 .cs-container {
-        width: 100%;
-        /* changes to 1440px at tablet */
-        max-width: 34.375em;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #timeline-970 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-    }
-
-    #timeline-970 .cs-title {
-        max-width: 18ch;
-        color: black;
-    }
-    #timeline-970 .cs-text {
-        max-width: 32.625rem;
-        color: var(--bodyTextColor);
-        opacity: 0.8;
-    }
-    #timeline-970 .cs-card-group {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        /* 40px - 80px */
-        gap: clamp(2.5rem, 6vw, 5rem);
-        position: relative;
-    }
-    #timeline-970 .cs-card-group:before {
-        /* white line through the bullets */
-        content: "";
-        width: 1px;
-        background: #ccc;
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0;
-        /* send it way down to reach the bottom of the section, and have some overlap so if you add content and the ul gets longer, it will still be at the bottom */
-        bottom: -18.75rem;
-        /* half the width of the bullet */
-        left: 0.375rem;
-    }
-    #timeline-970 .cs-item {
-        width: 100%;
-        max-width: 25rem;
-        list-style: none;
-        padding: 0 0 0 3.25rem;
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        position: relative;
-    }
-    #timeline-970 .cs-item:before {
-        /* bullet circle */
-        content: "";
-        width: 0.75rem;
-        height: 0.75rem;
-        background: var(--primaryDark);
-        border-radius: 50%;
-        opacity: 1;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-    }
-    #timeline-970 .cs-icon {
-        width: 3.75rem;
-        height: auto;
-        /* 32px - 40px */
-        margin: 0 0 clamp(2rem, 3vw, 2.5rem);
-    }
-    #timeline-970 .cs-h3 {
-        /* 20px - 25px */
-        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: 700;
-        /* changes to 100% at tablet */
-        width: 80%;
-        margin: 0 0 1rem 0;
-        color: var(--bodyTextColor);
-        position: relative;
-    }
-    #timeline-970 .cs-item-text {
-        /* 14px - 16px */
-        font-size: clamp(1.2rem, 1.5vw, 1.2rem);
-        line-height: 1.5em;
-        margin: 0;
-        color: var(--bodyTextColor);
-    }
+  #services-1331 {
+    padding: var(--sectionPadding);
+    background-color: #99ccff;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1331 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1331 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+  }
+  #services-1331 .cs-flex-group {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-1331 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1rem;
+  }
+  #services-1331 .cs-item {
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    /* 40px - 60px top & bottom,  20px - 48px left & right, */
+    padding: clamp(2.5rem, 4.1vw, 3.75rem) clamp(1.25rem, 3.4vw, 3rem);
+    background-color: #fff;
+    grid-column: span 12;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #services-1331 .cs-item:hover {
+    transform: translateY(-1rem);
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  }
+  #services-1331 .cs-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+  }
+  #services-1331 .cs-step {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* 48px - 100px */
+    margin-bottom: clamp(3rem, 7.8vw, 6.25rem);
+    color: var(--secondary);
+    display: block;
+    text-align: inherit;
+  }
+  #services-1331 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+    text-align: inherit;
+  }
+  #services-1331 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+    text-align: inherit;
+  }
+  #services-1331 .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #services-1331 .cs-background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.06;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #timeline-970 .cs-container {
-        max-width: 90rem;
-    }
-    #timeline-970 .cs-card-group {
-        flex-direction: row;
-    }
-    #timeline-970 .cs-card-group:before {
-        width: 100%;
-        height: 1px;
-        top: auto;
-        bottom: 0.375rem;
-        /* these next two properties center the line in the UL */
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #timeline-970 .cs-item {
-        padding: 0 0 4.125rem 0;
-        z-index: 1;
-        min-height: 410px;
-    }
-    #timeline-970 .cs-item::before {
-        top: auto;
-        bottom: 0rem;
-    }
-    #timeline-970 .cs-h3 {
-        width: 100%;
-    }
+  #services-1331 .cs-container {
+    max-width: 80rem;
+  }
+  #services-1331 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* 48px - 80px */
+    gap: clamp(3rem, 6vw, 5rem);
+    text-align: left;
+  }
+  #services-1331 .cs-title {
+    margin: 0;
+  }
+  #services-1331 .cs-flex-group {
+    width: 50%;
+  }
+  #services-1331 .cs-card-group {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+  #services-1331 .cs-item {
+    grid-column: span 4;
+  }
 }
                                 
 </style>
 
-<section id="timeline-970">
-  <div class="cs-container">
-      <div class="cs-content">
-          <h2 class="cs-title">Get a Quote in 3 Easy Steps</h2>
-      </div>
-      <ul class="cs-card-group">
-          <li class="cs-item">
-              <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-h3">Get in touch</h3>
-              <p class="cs-item-text">
-                Tell us what you need. Concrete removal, septic fields, land clearing, or anything else. We’ll answer your questions fast.<br>
-                <a style="margin-top: 20px;" href="/contact" class="cs-button-solid">Contact Us</a>
-              </p>
-          </li>
-          <li class="cs-item">
-              <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chat-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-h3">Chat With Us</h3>
-              <p class="cs-item-text">
-                We’ll learn about the job, your timeline, and goals. No sales pitch. Just honest service.
-              </p>
-          </li>
-          <li class="cs-item">
-              <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/flower-salon.svg" alt="icon" class="cs-icon" aria-hidden="true" decoding="async" width="60" height="60">
-              <h3 class="cs-h3">Get Your Quote</h3>
-              <p class="cs-item-text">
-                You’ll get a clear, no obligation quote customized to your property and the work you need done.
-              </p>
-          </li>
-      </ul>
-  </div>
+<section id="services-1331">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper" style="color: var(--secondary);">Our Process</span>
+                <h2 class="cs-title">How Pro Tubs LLC Makes It Easy</h2>
+            </div>
+            <p class="cs-text">
+                We keep it simple. Whether your tub is chipped, stained, or just outdated. Our proven process brings it back to life in just one day. No demolition. No mess.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Step 1</span>
+                    <h3 class="cs-h3">Get Your Free Quote</h3>
+                    <p class="cs-item-text">
+                        Call or message us to schedule a quick, no-pressure estimate. We’ll assess your tub and give you a fair, upfront price.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Step 2</span>
+                    <h3 class="cs-h3">We Refinish in One Day</h3>
+                    <p class="cs-item-text">
+                        Our expert team arrives on time, protects your space, and gets to work. Most jobs are completed in just a few hours.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Step 3</span>
+                    <h3 class="cs-h3">Enjoy Your Like New Tub</h3>
+                    <p class="cs-item-text">
+                        Your tub looks brand new, without the cost of replacement. Durable, glossy, and ready to use in just 24 hours.
+                    </p>
+                </a>
+            </li>
+        </ul>
+        
+          {% include 'components/cta_button.html' %}
 </section>
-            
+
+                                
