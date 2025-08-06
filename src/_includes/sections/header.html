@@ -13,13 +13,10 @@
             overflow: hidden;
         }
 
-        body.scroll #cs-navigation {
-            /* 53px, same height as the cs-top-container */
-            transform: translateY(-3.3125rem);
-        }
+      
 
-                body.scroll #cs-navigation .cs-logo {
-            height: 80px;
+                body.scroll #cs-navigation .cs-logo img {
+            height: 30px;
             transition: all ease .2s;
         }
 
@@ -136,7 +133,7 @@
 
         #cs-navigation .cs-logo {
          
-           
+              transition: all ease .2s;
               max-width: 300px;
             width: auto;
             height: 50px;
@@ -154,6 +151,7 @@
         #cs-navigation .cs-logo img {
             max-width: 280px;
             height: auto;
+            transition: all ease .2s;
             /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
              width: auto;
         }
